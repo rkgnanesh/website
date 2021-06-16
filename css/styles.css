@@ -1,0 +1,272 @@
+body {
+	color: #333;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Merriweather', serif;
+	
+}
+
+.hme {
+	background: #e0ebe8;
+	height: 100vh;
+}
+
+.cloud {
+	background: #fff;
+	background: -moz-linear-gradient(top,  #fff 5%, #f1f1f1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#fff), color-stop(100%,#f1f1f1));
+	background: -webkit-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -o-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: -ms-linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	background: linear-gradient(top,  #fff 5%,#f1f1f1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f1f1f1',GradientType=0 );
+	
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	
+	-webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+
+	height: 100px;
+	position: relative;
+	width: 350px;
+}
+
+.cloud:after, .cloud:before {
+    background: #fff;
+	content: '';
+	position: absolute;
+	z-indeX: -1;
+}
+
+.cloud:after {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+
+	height: 100px;
+	left: 50px;
+	top: -50px;
+	width: 100px;
+}
+
+.cloud:before {
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+	border-radius: 200px;
+
+	width: 180px;
+	height: 180px;
+	right: 50px;
+	top: -80px;
+}
+
+
+.x2 {
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+
+}
+
+.x1 {
+    -webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+
+    
+
+}
+
+.cloud1 {
+    
+	top:5%;
+	width:15%;
+	right: 25%;
+	position: absolute;
+	animation-name: move 20s linear infinite;
+	animation-delay: 1s;
+	
+}
+
+.cloud2 {
+  
+	position: absolute;
+	left:15%;
+	width:15%;
+	top:35%;
+}
+
+
+.land {
+    margin:auto;
+    width:80%;
+	left:10%;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	bottom:0;
+	z-index: 1;
+	position: absolute;
+}
+
+.home {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	background: #c5dfc7;
+}
+
+.sec-2 {
+	background:white;
+	position: relative;
+	
+	
+}
+
+.text {
+	position:absolute;
+	top:25%;
+	margin:auto;
+	width:100%;
+	color: #45b29a;
+	font-weight: normal;
+	z-index: 5;
+	line-height: 0;
+	padding-top: 0;
+	
+}
+
+p {
+	font-size: 1.5rem;
+	
+}
+h1{
+	font-size: 5rem;
+	animation-name: move 20s linear infinite;
+	
+}
+
+
+@media screen and (max-width:700px) {
+h1 {
+	font-size : 3rem;
+	transition: 1s ease-in-out;
+}
+p {
+	font-size: 1rem;
+	
+	
+}
+}
+
+@media screen and (min-width:400px) {
+
+	cloud1 {
+		right:40%;
+	}
+}
+
+#toon {
+	width:100%;
+	border-radius: 50%;
+	vertical-align: center;
+	height:150px;
+	position: absolute;
+	top:50px;
+	margin:auto;
+}
+
+.middle-txt {
+	position: relative;
+	font-size: 1.5rem;
+	color: #45b29a;
+	text-align: center;
+	top:225px;
+	font-weight: 500;
+}
+
+.middle-con {
+	font-size:1rem;
+	position:relative;
+	top: 250px;
+	width:50%;
+	margin:0 auto;
+	line-height:2;
+	text-align: center;
+}
+
+hr {
+	border: dotted #EAF6F6 6px;
+	border-bottom: none;
+	width: 8%;
+	margin: 100px auto;
+	position:relative;
+	top:225px;
+  }
+  .wicd {
+	color: #45b29a;
+	  font-size: 2rem;
+	  position: relative;
+	  top:200px;
+	  text-align: center;
+  }
+
+  .cont {
+	  position: relative;
+	  
+	 text-align: center;
+	  
+	  top:260px;
+	  
+	  
+
+  }
+  #con-toon {
+	  position: relative;
+	  height:100px;
+	  margin: auto;
+	 top:-30px;
+	 width: 100%;
+	 display: block;
+	 align-items: center;
+  }
+  #des-p {
+	
+	text-align: center;
+	line-height: 2;
+	font-size: 1rem;
+	position: relative;
+	top:30px;
+	width: 50%;
+	margin: 0 auto
+
+  }
+
+  .bottom-container {
+	background-color: #66BFBF;
+	position: relative;
+	padding-top: 20px;
+	top:340px;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+  }
+  .copyright {
+	color: #EAF6F6;
+	font-size: 0.75rem;
+	padding: 20px 0;
+  }
+  a:hover {
+	color: #EAF6F6;
+  }
+  .footer-link {
+	  text-decoration: none;
+	  padding:8px 20px;
+  }
